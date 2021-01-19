@@ -50,6 +50,21 @@ int Computer::readspeed() // defining the function inside the class from the out
   return processorspeed;
 }
 
+class calc
+{
+  public:
+    int multiply(int x, int y);
+    int add(int x, int y);
+ };
+int calc::multiply(int x, int y)
+{
+  return x*y;
+}
+int calc::add(int x, int y)
+{
+  return x+y;
+}
+
 int main()
 {
   Computer compute;
@@ -59,6 +74,12 @@ int main()
   compute.setspeed ( 100 );
   //  To call functions in the class, you put the name of the instance,
   //  a period, and then the function name.
-  cout<< compute.readspeed();
+  cout<< compute.readspeed() <<endl;
   // See above note.
+
+  cout<< "summing and multiplying two numbers\n";
+  cout<< "using the class 'calc'\n";
+  calc sum1;
+  cout<< sum1.add(4,5) <<endl;
+  cout<< sum1.multiply(4,5) <<endl;
 }
