@@ -2,13 +2,25 @@
 
 // created by MStolz-MSc
 
+// HEADER
 #include <iostream> // #include -> preprocessor, header
 using namespace std; // header, using of a standard library
 
-// function called "main" that returns an integer (int)
-int main()
+// CONSTANTS
+#define LENGTH = 400 //no semi-colon needed here
+#define WIDTH = 20
+
+// Global Variables
+int myvar1 = 2;
+double myvar2 = 3.4;
+
+// FUNCTIONS
+int main() // function called "main" that returns an integer (int)
 {
+    // local variables
+    const int myconst = 20; // type const for constants
     int age;
+
     cout << "Hello World\n";                        // "<<" are insertion operators
     cout << "Pls enter your age: ";
     cin >> age;
